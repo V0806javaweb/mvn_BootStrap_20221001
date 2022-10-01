@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script src="js/angular1.8.1.js"></script>
+<div ng-app="" ng-init="names=[ 
+     {name:'Jani',country:'Norway'},
+     {name:'Hege',country:'Sweden'},
+     {name:'Kai',country:'Denmark'}]">
+ 
+<p>迴圈物件：</p>
+  <ul>
+  <li ng-repeat="x in names">
+    {{ x.name + ', ' + x.country }}
+  </li>
+  </ul> 
+</div>
+
+</body>
+</html>
